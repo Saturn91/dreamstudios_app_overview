@@ -61,7 +61,7 @@ export default function Home() {
             <img
               className={styles.gameThumbnail}
               src={
-                game.imageUrl ||
+                game.altImgUrl ||
                 `https://cdn.cloudflare.steamstatic.com/steam/apps/${game.appid}/header.jpg`
               }
               alt={game.title}
