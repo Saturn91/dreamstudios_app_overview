@@ -3,7 +3,8 @@ const GAMES = [
     appid: 3734980,
     title: "A Simple job",
     storeUrl: "https://store.steampowered.com/app/3734980/A_Simple_job/",
-    steamdbUrl: "https://steamdb.info/app/3734980/"
+    steamdbUrl: "https://steamdb.info/app/3734980/",
+    altImgUrl: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3734980/f229a975d433357df1b194a1e4076872b6b44b3e/header.jpg?t=1750940945",
   },
   {
     appid: 2876720,
