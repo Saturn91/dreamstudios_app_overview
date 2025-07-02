@@ -1,0 +1,109 @@
+.container {
+  font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', Arial, sans-serif;
+  background: #171a21;
+  min-height: 100vh;
+  padding: 0;
+  
+}
+.title {
+  text-align: center;
+  margin-top: 32px;
+  font-size: 2.2em;
+  font-weight: 700;
+  color: #66c0f4;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px #000a;
+}
+.gamesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+.gameCard {
+  background: linear-gradient(135deg, #23262e 60%, #1b2838 100%);
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.35);
+  padding: 28px 28px 20px 28px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1.5px solid #2a475e;
+  transition: box-shadow 0.2s, border 0.2s, transform 0.2s;
+  position: relative;
+}
+.gameCard:hover {
+  box-shadow: 0 8px 32px #000b, 0 0 0 2px #66c0f4;
+  border: 1.5px solid #66c0f4;
+  transform: translateY(-4px) scale(1.03);
+}
+.gameTitle {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 14px;
+  color: #fff;
+  text-shadow: 0 1px 4px #000a;
+}
+.currentPlayers {
+  margin-top: 8px;
+  font-size: 1.05em;
+  color: #c7d5e0;
+}
+.reviewCount {
+  margin-top: 8px;
+  font-size: 1.05em;
+  color: #c7d5e0;
+}
+.reviewSummary {
+  margin-top: 8px;
+  font-size: 1.05em;
+  font-weight: 600;
+  color: #59bf40;
+  text-shadow: 0 1px 4px #000a;
+}
+.gameLinks {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+}
+.gameLinks a {
+  color: #66c0f4;
+  text-decoration: none;
+  font-weight: 500;
+  background: #101822;
+  padding: 7px 18px;
+  border-radius: 5px;
+  border: 1px solid #2a475e;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  box-shadow: 0 1px 4px #000a;
+}
+.gameLinks a:hover {
+  background: #66c0f4;
+  color: #23262e;
+  border: 1px solid #66c0f4;
+  text-decoration: none;
+}
+.gameThumbnail {
+  display: block;
+  margin: 0 auto 14px auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px #000a;
+  background: #23262e;
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 900px) {
+  .gamesContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .gameCard {
+    width: 90vw;
+    min-width: 0;
+    max-width: 400px;
+  }
+} 
